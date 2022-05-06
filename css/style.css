@@ -1,0 +1,345 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #363636;}
+
+
+/* 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+body{font-size: 16px;
+    line-height: 26px; 
+    font-family: 'Pretendard-Regular';
+    min-width: 1320px;
+    color: #363636;}
+
+
+/* 메인배너 */
+#main_banner{width: 100%;
+}
+#main_banner img{width: 100%;
+    display: block;}
+
+/* 새상품 텍스트 */
+h3{font-size: 25px;
+    color: #193851;
+    line-height: 10px;
+    /* margin-bottom: 5px; */
+    text-align: center;}
+h2{font-size: 35px;
+   color: #193851;
+   font-family: 'YiSunShinDotumM';
+    line-height: 45px;
+    margin-bottom: 46px;
+font-weight: 500;}
+p{font-size: 18px;
+   line-height: 24px;
+color: #363636;
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;}
+
+/* 쇼모어 */
+.show{font-size: 20px;
+position: absolute;
+bottom: 190px;
+left: 562px;
+z-index: 2;
+line-height: 6px;}
+.show a{display: block;
+    color: #193851;}
+.show a span{color: #fff;}
+
+/* 새상품 */
+.new{margin-top: 106px;
+    height: 620px;}
+.name{text-align: center;
+margin-bottom: 64px;}
+
+.new_inner{    width: 1320px;
+    height: 498px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;}/*기준*/
+
+.new2{position: absolute;
+top: 0;
+right: 0;
+z-index: 1;
+}
+.new_list{position: absolute;
+bottom: -7px;
+left: 0;
+z-index: 4;}
+.new_list li{float: left;
+height: 142px;
+margin-right: 36px;
+position: relative;}
+.new_list li a{display: block;
+transition: all;}
+
+
+/* 뉴리스트 호버 */
+.new_hover{position: absolute;
+top: 0;
+left: 0;
+opacity: 0;}
+.new_list a:hover .new_hover{opacity: 100%;}
+
+/* 베스트상품 */
+#best{margin-top: 140px;}
+.best{background-color: #e9ecee;
+    width: 100%;}
+.best_inner{width: 1320px;
+    height: 478px;
+    margin: auto;    overflow: hidden;}
+
+.text1{float: left;
+    width: 460px;
+padding-top: 70px;}
+
+
+
+.brand{font-size: 30px;
+padding-bottom: 20px;
+border-bottom: 2px solid #193851;
+width: 62px;
+margin-bottom: 34px;}
+
+
+
+/* 슬라이드 시키기 
+.swiper{float: right;
+    height: 513px;
+    width: 860px;
+    position: relative;
+    overflow: hidden;}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;*/
+    /* Center slide text vertically */
+    .best_img{
+        width: 860px;
+        float: right;
+        overflow: hidden;
+    
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+
+
+
+/* 카테고리 */
+.tag_shadow{width: 100%;
+    height: 410px;
+    box-shadow: 0px 8px 30px 0px rgba(204, 204, 204, 0.5);}
+
+.tag_img{height: 342px;
+    width: 100%;}
+.tag_img img{width: 100%;
+height: 342px;}
+
+.tag{width: 1320px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;}
+
+.tag ul li{float: left;
+padding:80px 90px 70px;}
+.tag li a{display: block;}
+.tag>p{padding-bottom: 60px;font-family: 'Pretendard-Regular';}
+
+/* 어바웃 */
+
+#about{margin-top: 120px;
+    height: 723px;}
+.about{width: 1320px;
+    margin: auto;}
+
+/* 어바웃 브랜드 */
+.about_brand{width: 522px;
+    height: 620px;
+    background-color: #194059;
+    text-align: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 35px;}
+
+.about_brand>img{
+margin-bottom: 40px;
+}
+.about p{
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 30px;
+}
+.about_brand span{
+    display: block;
+    font-size: 16px;
+}
+.about_brand > a{display: inline-block;
+    text-align: center;
+    padding: 18px 26px;
+    border: #fff 2px solid;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 40px;}
+
+
+/* 어바웃 노티스 */
+.about_notice{float: right;
+    width: 763px;
+    height: 300px;
+    background: url(../images/about_notice.png) no-repeat 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;}
+.about_notice a{padding: 137px 0 0;
+    display: block;
+    height: 300px;
+    box-sizing: border-box;}
+.about_notice a p{font-size: 25px;
+    text-align: center;}
+.about_notice a:hover{background-color: #36363635;}
+
+/* 어바웃 컨택트 */
+.about_contact{width: 369px;
+    height: 295px;
+    float: left;
+    background: url(../images/about_contact.png);
+    box-sizing: border-box;}
+.about_contact a{display: block;
+padding: 135px 0 0 ;height: 295px;
+box-sizing: border-box;}
+.about_contact a p{font-size: 25px;
+text-align: center;}
+
+.about_contact a:hover{background-color: #3636364d;}
+    
+
+/* 어바웃 faq */
+.about_faq{background: #194059 url(../images/about_FAQ_icon.png) no-repeat 56% 30%;
+width: 369px;
+height: 295px;
+float: right;
+box-sizing: border-box;}
+.about_faq a{display: block;
+padding: 205px 148px 62px;}
+.about_faq a p{font-size: 25px;
+    text-align: center;}
+
+/* 플레이스 */
+.place_box{width: 100%;
+height: 597px;
+position: relative;
+margin-top: 95px;
+overflow: hidden;
+padding-top: 50px;}
+
+.place2 ul{position: absolute;
+top: 0;
+left: 0;}
+
+.place2 li{float: left;}
+
+.white_box{
+    height: 597px;
+    width: 50%;
+    padding: 80px 85px;
+    box-sizing: border-box;
+    float: left;
+    z-index: 4;
+    box-shadow: 0px -8px 30px 0px rgba(204, 204, 204, 0.5);
+    position: relative;}
+
+.place_text{height: 597px;
+    width: 600px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 70px 0px;}
+.place_text span{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.place_text>p{font-size: 16px;}
+
+.img_place2{
+    background: url(../images/place_img.png) repeat-x;
+height: 597px;
+width: 50%;
+position:relative;
+
+z-index: 1;}
+
+.show2{font-size: 20px;
+    position: absolute;
+    bottom: 260px;
+    right: 50px;
+    line-height: 6px;}
+
+
+.show2> a{display: block;
+        color: #193851;}
+
+
+.map{position: absolute;
+     height: 450px;
+    z-index: 3;
+    top: 72px;
+    left: -110px;
+    box-shadow: -10px 0px 20px 0px rgba(204, 204, 204, 0.5);
+    box-sizing: border-box;}
+
+
+

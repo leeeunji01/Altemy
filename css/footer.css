@@ -1,0 +1,39 @@
+/* 푸터 */
+
+#footer{
+    background-color: #3a4349;
+    height: 344px;
+}
+.footer_inner{width: 1320px;
+    margin: auto;
+padding-top: 55px;}
+.footer_inner h1{float: left;
+margin-right: 30px;}
+.footer_inner h1 img{
+    width: 200px;
+}
+.foot_menu{float: right;
+padding-top: 10px;}
+
+.foot_menu>li{float: left;
+    padding-right: 80px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;}
+
+.foot_sub{position: absolute;
+    top: 60px;
+    left: 0;}
+
+.foot_sub li a{color: #fff;
+display: inline-block;
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+font-size: 15px;
+font-weight: 200;}
+
+.sns_icon{position: absolute;
+    top: 60px;
+    left: 0;}
+.sns_icon li{float: left;}
+.sns_icon li:nth-child(2){padding: 0px 10px;}

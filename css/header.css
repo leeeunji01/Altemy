@@ -1,0 +1,69 @@
+/* 헤더 */
+#header{height: 87px;
+    text-align: center;
+}
+.header_inner{width: 1320px;
+    margin: auto; padding-top:26px;}
+
+/* 로고 */
+.header_inner>h1 a{float: left;
+   padding: 0px 40px;
+}
+.header_inner>h1 img{
+    width: 100px;
+}
+/* 메뉴 */
+.menu{display: inline-block;}
+.menu> li {float: left;}
+.menu> li> a{display: block;
+    font-size: 18px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    color: #142b39;
+    padding: 12px 36px 23px;;}
+
+/* 서브메뉴 */
+
+.sub_bg{z-index: 6;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;/*relative를 안잡주면 body가 기준이 됨.*/
+    left: 0;/*body기준으로 제일 왼쪽*/
+    height: 240px;
+    display: none; /*서브메뉴 안보이게 만들기 */
+    padding: 20px 0;
+    box-sizing: border-box;}
+
+.sub_bg div{/*가운데 창*/
+    width: 1230px;
+    margin: auto;}
+
+.sub_bg div li{
+    float: left;
+    padding: 10px 50px 20px 0;}
+
+.sub_bg_img{width: 218px;
+    height: 212px;
+    margin: 8px 0px;
+    background: url(../images/sub_image1.png) no-repeat;}
+
+
+
+/*서브메뉴 보이게 만들기*/
+.menu> li:hover .sub_bg{
+    display: block;}
+
+.menu_text{font-size: 16px;
+    font-weight: 400;
+    margin: 20px 30px 0 0;}
+
+/* 아이콘 */
+.header_icon{float: right;}
+.header_icon li{float: left;}
+.header_icon li a{display: block;
+    padding: 0px 8px;
+box-sizing: border-box;}
+.header_icon li:nth-child(1){margin-top: 5px;}
+.header_icon li img{
+    width: 24px;
+}
